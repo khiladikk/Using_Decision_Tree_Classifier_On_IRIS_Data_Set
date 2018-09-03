@@ -5,7 +5,7 @@ iris= load_iris()
 print(iris.feature_names)
 print(iris.target_names)
 
-#Now to test the algorithm I'm gonna remove some random lines from the data we have and with the remaining data we will train the algorithm, if the real values from the data and algorithm matches then we can say that our algorithm is working right.
+#Now to test the algorithm, I'm gonna remove some random lines from the data we have and with the remaining data we will train the algorithm, if the real values from the data and algorithm matches then we can say that our algorithm is working right.
 remove = [0,25,50,100]
 new_target = np.delete(iris.target, remove)
 new_data= np.delete(iris.data, remove, axis=0)
